@@ -1,0 +1,20 @@
+{
+  "name": "mean",
+  "description": "Estudo sobre MEAN",
+  "main": "server.js",
+  "authors": [
+    "maycon"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  }
+}
