@@ -1,5 +1,9 @@
 module.exports = function(app) {
   var controller = app.controllers.contatos;
-  app.get('/contatos', controller.listaContatos);
-  app.get('/contatos/:id', controller.getContato);
+  app.route('/contatos')
+    .get(controller.listaContatos);
+
+  app.route('/contatos/:id')
+    .get(controller.getContato)
+    .delete(controller.removeContato);
 };
